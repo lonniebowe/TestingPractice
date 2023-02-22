@@ -12,7 +12,7 @@ class TestAce(unittest.TestCase):
     def test_one(self):
         self.assertEqual(self.machine.aces([1,2,3,4,5]), 1, "Should be 1")
         self.assertEqual(self.machine.aces([2,3,4,5,1]), 1, "Should be 1")
-        self.assertEqual(self.machine.aces([1,1,1,0,1]), 5, "Should be 1")
+        self.assertEqual(self.machine.aces([1,1,1,0,1]), 4, "Should be 4")
     
     def test_two(self):
         self.assertEqual(self.machine.aces([1,2,1,4,5]), 2, "Should be 2")
